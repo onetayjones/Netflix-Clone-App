@@ -18,3 +18,22 @@ class USER {
     this.password = password;
   }
 }
+
+get username (){
+  return this.username;
+}
+
+get password(){
+  return this.password;
+}
+
+
+// Sign-In Events & User to Home Relocation
+
+
+
+form.addEventListener("submit", function (event) {
+ event.preventDefault();
+ SignedInUser(usernameInput.value, passwordInput.value);
+ window.location.href = "/src/pages/home.html";
+});
