@@ -1,20 +1,139 @@
-html {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/Netflix-background.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* HTML styling */
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
 body {
-  margin: 0;
+
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/Netflix-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.facebook-signin
-{
-  margin-left:-13rem;
+
+
+/* Header */
+header{
+  align-items: center;
+}
+
+.netflix-logo {
+  max-width: 200px;
+}
+
+.container {
+  max-width: 120rem;
+}
+
+
+
+/* Form */
+
+h1 {
+  font-weight: 550;
+  margin-left: 55px;
+ margin-bottom: 8px;
+ color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+span{
+  color: #8c8c8c;
+}
+
+
+
+
+
+
+
+.signin-form {
+padding: 40px;
+background-color: rgba(0, 0, 0, 0.786);
+max-width: 500px;
+min-height: 630px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+
+
+}
+
+.sign-in {
+  margin: auto;
+}
+
+
+input {
+  background: #333;
+  border-radius: 4px;
+  border: 0;
+  color: #fff;
+  height: 4vh;
+  width: 18vw;
+  line-height: 50px;
+  margin-top: 2rem;
+}
+
+input[type="text"i] {
+  padding-left: 10px;
+}
+
+input[type="password"i] {
+  padding-left: 10px;
+}
+
+.insert-username {
+  color: white;
+}
+
+.password {
   margin-top: 1rem;
+}
+
+.submit {
+  background: #e50914;
+  border: none;
+  padding: 0.3rem;
+  margin-top: 3rem;
+  margin-left: 55px;
+  width: 320px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.facebook-signin {
+margin-top: 70px;
+margin-bottom: 15px;
+}
+
+.facebook-signin img
+{
+   height: 25px;
+
+}
+
+.fb-login{
+  margin-left: 10px;
+}
+
+.new-member{
+  margin-bottom: 15px;
+}
+
+.password, .username {
+  width: 320px;
+  margin-left: 55px;
 }
