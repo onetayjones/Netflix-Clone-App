@@ -100,6 +100,13 @@ input[type="password"i] {
 
 .checkbox{
 height: 15px;
+
+
+}
+
+label{
+  font-size: 13px;
+  color: #8c8c8c;
 }
 
 /* Bottom Form Section */
@@ -110,6 +117,7 @@ a {
 
 .bottom-form{
   font-size: 13px;
+  margin-top:200px;
 }
 
 .facebook-signin {
