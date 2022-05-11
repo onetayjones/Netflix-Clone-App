@@ -1,27 +1,23 @@
 /* HTML styling */
-
-*{
+* {
   box-sizing: border-box;
   margin: 0%;
   padding: 0%;
 }
 
 body {
-
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: transparent;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/Netflix-background.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-
-
 /* Header */
-header{
+header {
   align-items: center;
 }
 
@@ -31,53 +27,40 @@ header{
 
 .container {
   max-width: 120rem;
+  margin-bottom: 100px;
 }
-
-
 
 /* Form */
+.signin-form {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.786);
+  max-width: 500px;
+  min-height: 730px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 h1 {
-  font-weight: 550;
+  font-weight: 550px;
   margin-left: 55px;
- margin-bottom: 8px;
- color: white;
+  margin-bottom: 8px;
+  color: white;
 }
 
-a{
-  text-decoration: none;
-}
 
-span{
+
+span {
   color: #8c8c8c;
-}
-
-
-
-
-
-
-
-.signin-form {
-padding: 40px;
-background-color: rgba(0, 0, 0, 0.786);
-max-width: 500px;
-min-height: 630px;
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-
-
 }
 
 .sign-in {
   margin: auto;
 }
 
-
 input {
   background: #333;
-  border-radius: 4px;
+  border-radius: 5px;
   border: 0;
   color: #fff;
   height: 4vh;
@@ -108,29 +91,42 @@ input[type="password"i] {
   padding: 0.3rem;
   margin-top: 3rem;
   margin-left: 55px;
+  margin-bottom: 10px;
   width: 320px;
   border-radius: 4px;
   color: #fff;
   font-size: 20px;
 }
 
+.checkbox{
+height: 15px;
+}
+
+/* Bottom Form Section */
+
+a {
+  text-decoration: none;
+}
+
+.bottom-form{
+  font-size: 13px;
+}
+
 .facebook-signin {
-margin-top: 70px;
-margin-bottom: 15px;
+  margin-top: 70px;
+  margin-bottom: 8px;
 }
 
-.facebook-signin img
-{
-   height: 25px;
-
+.facebook-signin img {
+  height: 25px;
 }
 
-.fb-login{
+.fb-login {
   margin-left: 10px;
 }
 
-.new-member{
-  margin-bottom: 15px;
+.new-member {
+  margin-bottom: 8px;
 }
 
 .password, .username {
