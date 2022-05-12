@@ -1,13 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+}
+
+body{
+  background-color: #E50914;
+}
+
+
+
 .navbar ul {
   display: flex;
   list-style: none;
   margin-left: 50px;
   margin-top: 20px;
-  z-index: 1;
+
 }
 
 .navbar li {
   padding-left: 100px;
   cursor: pointer;
-  color: black;
+  color: white;
+}
+
+.netflix-logo {
+  display: flex;
 }
