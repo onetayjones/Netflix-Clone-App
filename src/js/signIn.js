@@ -8,7 +8,7 @@ let passwordInput = document.querySelector(".password")
 // local storage key & user array
 
 const STORAGE_KEY = "sign-in-user-storage-key"
-let userArray = [];
+let usersArray = [];
 
 // User class & constructor
 
@@ -31,9 +31,27 @@ get password(){
 // Sign-In Events & User to Home Relocation
 
 
-
 form.addEventListener("submit", function (event) {
  event.preventDefault();
- SignedInUser(usernameInput.value, passwordInput.value);
+ UserSignedIn(usernameInput.value, passwordInput.value);
  window.location.href = "/src/pages/home.html";
 });
+
+
+// Saving form Inputs
+
+function UserSignedIn(username, password) {
+ if (username !== "" && password !== "") {
+   let UserSignedIn = new User(username, password);
+   userArray.push(UserSignedIn);
+   addToLocalStorage(usersArray);
+}
+}
+
+
+//Local Storage
+
+function addToLocalStorage (usersArray){
+  usersArray = JSON.stringify(usersArray);
+  localStorage.setItem(STORAGE_KEY, usersArray);
+}
