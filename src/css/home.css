@@ -13,6 +13,7 @@ body{
 
 .navbar ul {
   display: flex;
+  justify-content: center;
   list-style: none;
   margin-left: 50px;
   margin-top: 20px;
@@ -25,6 +26,20 @@ body{
   color: white;
 }
 
+.search-and-logout{
+  display: flex;
+}
+
 .netflix-logo {
   display: flex;
+}
+
+#search{
+  border-radius: 5px;
+}
+
+
+
+.avatar{
+  height: 35px;
 }

@@ -20,21 +20,39 @@
   <!-- Home Page -->
   <div id="netflixapp">
   </div>
+  <!-- Nav Bar -->
   <header>
     <div class="navbar">
       <div class="netflix-logo">
-        <img src="../images/netflix-logo.png" alt="Netflix Logo">
+        <a href="#">
+          <img src="../images/netflix-logo.png" alt="Netflix Logo">
+        </a>
       </div>
 
       <ul class="nav-list">
         <li>Home</li>
         <li>Movies</li>
         <li><a href="./watchlist.html"></a>My List</li>
-        </ul>
+      </ul>
+    </div>
+
+    <div class="search-and-logout">
+      <div class="search-bar">
+
+        <input type="search" placeholder="Genres, Titles ..." id='search'>
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+    </div>
+
+    <div class="dropdown-button">
+      <button onclick="myButton()" class="dropbtn"><img class="avatar" src="../images/avatar-profile.png" alt="profile avatar"></button>
+      <div id="myDropdown" class="drop-content">
+        <a href="#">{{username}}</a>
+        <a href="#"> <p @click='logout'>Logout</p>  </a>
+      </div>
     </div>
 
 
-<button type="button" name="button">Logout</button>
 
   </header>
 
