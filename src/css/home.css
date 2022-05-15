@@ -13,7 +13,7 @@ body{
 
 .navbar ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   list-style: none;
   margin-left: 50px;
   margin-top: 20px;
@@ -26,7 +26,7 @@ body{
   color: white;
 }
 
-.search-and-logout{
+.search-bar , .dropdown-button{
   display: flex;
 }
 
@@ -42,4 +42,5 @@ body{
 
 .avatar{
   height: 35px;
+
 }

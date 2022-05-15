@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
   <!-- scripts -->
   <script src="https://unpkg.com/vue@3" defer></script>
-  <script src="/src/js/script.js" type="module" defer></script>
+  <script src="../js/script.js" type="module" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
   <title>Netflix - Home</title>
 </head>
@@ -32,7 +32,7 @@
       <ul class="nav-list">
         <li>Home</li>
         <li>Movies</li>
-        <li><a href="./watchlist.html"></a>My List</li>
+        <li><a href="../watchlist.html"></a>My List</li>
       </ul>
     </div>
 
@@ -52,6 +52,30 @@
       </div>
     </div>
 
+    <!-- Movies Coming Soon carousel -->
+
+     <div v-else="list.length > 0" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+
+        <template v-for="(slide, index) in list">
+          <button  v-show="list.length > 1" type="button" data-bs-target="#carouselExampleCaptions" :data-bs-slide-to="index" :class="{ active: index === 0 }" aria-current="index === 0" :aria-label="slide.title"></button>
+        </template>
+
+        </div>
+
+        <div class="carousel-inner">
+            <template v-for="(slide, index) in list">
+                <div :class="{ 'carousel-item': true, active: index === 0 }" >
+                    <img :src="slide.image" class="d-block w-100" :alt="slide.description">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ slide.title }}</h5>
+                        <p>{{ slide.description }}</p>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
 
 
   </header>

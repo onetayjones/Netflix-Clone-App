@@ -1,3 +1,12 @@
+import {MovieList} from "../js/MovieArray.js";
+
+const { createApp } = window.Vue;
+
+
+const STORAGE_KEY = "sign-in-user-storage-key"
+
+const MY_WATCHLIST_KEY = "watchlist-storage-key"
+
 
 
 
